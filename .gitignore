@@ -1,24 +1,6 @@
-# Output e cache
 output/
-logs/
+test_*/
 __pycache__/
 *.pyc
-*.pyo
-
-# Sistema operativo
 .DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Python virtual environment (non dovrebbe essere qui ma per sicurezza)
-venv/
-.venv/
-env/
-
-# File locali sensibili
-.env
-*.key
-*api_token*
+.Rhistory

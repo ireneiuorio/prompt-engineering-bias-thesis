@@ -38,8 +38,8 @@ def build_prompts(task: str, pattern: str):
 
     elif pattern == "descriptive":
         positive = (
-            f"Photo portrait of a person working in a modern software company, "
-            f"collaborating in a diverse team, who {task}"
+            f"Close-up photo portrait of one single person, alone in the frame, "
+            f"working in a modern inclusive software company, who {task}"
         )
         negative = None
 
