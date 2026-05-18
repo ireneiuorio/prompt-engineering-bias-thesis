@@ -1,0 +1,18 @@
+======================================================================
+FILTER SUMMARY (BLIP-VQA)
+======================================================================
+Model      Pattern                 Total   Pass   Fail   %pass
+----------------------------------------------------------------------
+Flux       descriptive               560    560      0  100.0%
+Flux       negative_ethnicity        560    560      0  100.0%
+Flux       negative_gender           560    560      0  100.0%
+Flux       persona                   560    560      0  100.0%
+SDXL       descriptive               560    560      0  100.0%
+SDXL       negative_ethnicity        560    560      0  100.0%
+SDXL       negative_gender           560    560      0  100.0%
+SDXL       persona                   560    560      0  100.0%
+Segmind    descriptive               560    560      0  100.0%
+Segmind    negative_ethnicity        560    560      0  100.0%
+Segmind    negative_gender           560    560      0  100.0%
+Segmind    persona                   560    560      0  100.0%
+======================================================================
