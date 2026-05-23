@@ -1,0 +1,21 @@
+type,n,accuracy,f1
+Flux / descriptive,82,0.9756,0.9756
+Flux / negative_ethnicity,82,1.0000,1.0000
+Flux / negative_gender,82,0.9756,0.9756
+Flux / persona,82,1.0000,1.0000
+SDXL / descriptive,82,0.9756,0.9816
+SDXL / negative_ethnicity,82,1.0000,1.0000
+SDXL / negative_gender,82,1.0000,1.0000
+SDXL / persona,82,1.0000,1.0000
+Segmind / descriptive,82,0.9756,0.9770
+Segmind / negative_ethnicity,82,1.0000,1.0000
+Segmind / negative_gender,82,1.0000,1.0000
+Segmind / persona,82,1.0000,1.0000
+All Flux,328,0.9878,0.9878
+All SDXL,328,0.9939,0.9954
+All Segmind,328,0.9939,0.9943
+All descriptive,246,0.9756,0.9774
+All negative_ethnicity,246,1.0000,1.0000
+All negative_gender,246,0.9919,0.9919
+All persona,246,1.0000,1.0000
+OVERALL,984,0.9919,0.9921
