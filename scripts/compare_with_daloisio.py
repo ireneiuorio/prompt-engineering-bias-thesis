@@ -9,9 +9,9 @@ ESATTAMENTE le stesse formule applicate ai tuoi pattern:
     ethnicity_bias = |max(Pe) - min(Pe)|  over {Arab, Asian, Black, White}
 
 Input:
-  - /tmp/daloisio_csvs/G_{ethnicity,gender}_count_{segmind,xl,flux}.csv
-  - /tmp/daloisio_csvs/SE_{ethnicity,gender}_count_{segmind,xl,flux}.csv
-  - /tmp/daloisio_csvs/SE_{ethnicity,gender}_count_{segmind,xl,flux}_fair.csv
+  - ./labelling/daloisio_baseline_data/G_{ethnicity,gender}_count_{segmind,xl,flux}.csv
+  - ./labelling/daloisio_baseline_data/SE_{ethnicity,gender}_count_{segmind,xl,flux}.csv
+  - ./labelling/daloisio_baseline_data/SE_{ethnicity,gender}_count_{segmind,xl,flux}_fair.csv
   - labelling/bias_by_combo.csv  (i tuoi 12 valori di bias)
 
 Output:
@@ -32,7 +32,7 @@ from collections import defaultdict
 from pathlib import Path
 
 
-DALOISIO_DIR = Path("/tmp/daloisio_csvs")
+DALOISIO_DIR = Path("./labelling/daloisio_baseline_data")
 YOUR_BIAS_CSV = Path("./labelling/bias_by_combo.csv")
 OUT_BASELINE = Path("./labelling/baseline_daloisio.csv")
 OUT_COMPARISON = Path("./labelling/comparison_table.csv")

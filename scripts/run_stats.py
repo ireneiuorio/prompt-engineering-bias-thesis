@@ -32,7 +32,7 @@ import scikit_posthocs as sp
 
 # ---- PATHS ----
 BIAS_BY_TASK_CSV = Path("./labelling/bias_by_task.csv")
-DALOISIO_DIR     = Path("/tmp/daloisio_csvs")
+DALOISIO_DIR     = Path("./labelling/daloisio_baseline_data")
 
 OUT_A   = Path("./labelling/stats_analysis_A_thesis_only.csv")
 OUT_B   = Path("./labelling/stats_analysis_B_full.csv")
