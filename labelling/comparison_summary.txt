@@ -1,0 +1,37 @@
+====================================================================================================
+CONFRONTO BIAS: 3 baseline d'Aloisio (General/SE/Fair) + 4 nuovi pattern
+Delta vs SE: negativo = miglioramento, positivo = peggioramento
+====================================================================================================
+Model      Pattern                Src             GB    ΔGB/SE      EB    ΔEB/SE
+----------------------------------------------------------------------------------------------------
+Segmind    General                d'Aloisio   0.8304   -0.1696  0.9696   -0.0277
+Segmind    SE                     d'Aloisio   1.0000   +0.0000  0.9973   +0.0000
+Segmind    Fair                   d'Aloisio   0.5982   -0.4018  0.6348   -0.3625
+Segmind    persona                thesis      1.0000   +0.0000  1.0000   +0.0027
+Segmind    descriptive            thesis      0.8321   -0.1679  0.9732   -0.0241
+Segmind    negative_gender        thesis      1.0000   +0.0000  1.0000   +0.0027
+Segmind    negative_ethnicity     thesis      1.0000   +0.0000  0.9964   -0.0009
+----------------------------------------------------------------------------------------------------
+SDXL       General                d'Aloisio   0.7100   -0.2515  0.8359   -0.1514
+SDXL       SE                     d'Aloisio   0.9615   +0.0000  0.9872   +0.0000
+SDXL       Fair                   d'Aloisio   0.4018   -0.5597  0.9437   -0.0435
+SDXL       persona                thesis      1.0000   +0.0385  0.9964   +0.0092
+SDXL       descriptive            thesis      0.9643   +0.0028  0.5054   -0.4818
+SDXL       negative_gender        thesis      0.9857   +0.0242  0.9339   -0.0533
+SDXL       negative_ethnicity     thesis      0.9964   +0.0349  0.8607   -0.1265
+----------------------------------------------------------------------------------------------------
+Flux       General                d'Aloisio   0.4643   -0.5286  0.5841   -0.2731
+Flux       SE                     d'Aloisio   0.9929   +0.0000  0.8571   +0.0000
+Flux       Fair                   d'Aloisio   0.0018   -0.9911  0.5500   -0.3071
+Flux       persona                thesis      0.9929   +0.0000  0.6357   -0.2214
+Flux       descriptive            thesis      0.9250   -0.0679  0.5286   -0.3285
+Flux       negative_gender        thesis      0.4857   -0.5072  0.5411   -0.3160
+Flux       negative_ethnicity     thesis      0.9893   -0.0036  0.8661   +0.0090
+====================================================================================================
+
+Legenda:
+  Src='d'Aloisio' = baseline scaricata dal replication package del paper
+  Src='thesis'    = pattern nuovo proposto in questa tesi
+  GB  = gender bias  |P(Male) - P(Female)|
+  EB  = ethnicity bias |max(Pe) - min(Pe)| su {Arab,Asian,Black,White}
+  Δ = delta rispetto a SE (baseline di riferimento del paper)
