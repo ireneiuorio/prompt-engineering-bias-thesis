@@ -1,0 +1,153 @@
+====================================================================================================
+ANALISI A: confronto fra i 4 pattern della tesi
+====================================================================================================
+
+[Segmind] gender_bias
+  Kruskal-Wallis: H=127.361, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     persona                vs descriptive            p=0.0000  A12=0.821 (large)
+     descriptive            vs negative_gender        p=0.0000  A12=0.179 (large)
+     descriptive            vs negative_ethnicity     p=0.0000  A12=0.179 (large)
+
+[Segmind] ethnicity_bias
+  Kruskal-Wallis: H=23.933, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     persona                vs descriptive            p=0.0002  A12=0.589 (small)
+     descriptive            vs negative_gender        p=0.0002  A12=0.411 (small)
+     descriptive            vs negative_ethnicity     p=0.0046  A12=0.428 (small)
+
+[SDXL] gender_bias
+  Kruskal-Wallis: H=14.939, p=0.0019 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     persona                vs descriptive            p=0.0027  A12=0.580 (small)
+     descriptive            vs negative_ethnicity     p=0.0106  A12=0.428 (small)
+
+[SDXL] ethnicity_bias
+  Kruskal-Wallis: H=153.458, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     persona                vs descriptive            p=0.0000  A12=1.000 (large)
+     persona                vs negative_gender        p=0.0068  A12=0.743 (large)
+     persona                vs negative_ethnicity     p=0.0000  A12=0.800 (large)
+     descriptive            vs negative_gender        p=0.0000  A12=0.003 (large)
+     descriptive            vs negative_ethnicity     p=0.0000  A12=0.061 (large)
+
+[Flux] gender_bias
+  Kruskal-Wallis: H=122.376, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     persona                vs negative_gender        p=0.0000  A12=0.896 (large)
+     descriptive            vs negative_gender        p=0.0000  A12=0.844 (large)
+     negative_gender        vs negative_ethnicity     p=0.0000  A12=0.106 (large)
+
+[Flux] ethnicity_bias
+  Kruskal-Wallis: H=85.436, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     persona                vs negative_ethnicity     p=0.0000  A12=0.127 (large)
+     descriptive            vs negative_ethnicity     p=0.0000  A12=0.103 (large)
+     negative_gender        vs negative_ethnicity     p=0.0000  A12=0.088 (large)
+
+====================================================================================================
+ANALISI B: confronto fra 4 pattern tesi + 3 baseline d'Aloisio
+====================================================================================================
+
+[Segmind] gender_bias
+  Kruskal-Wallis: H=244.885, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     General                vs SE                     p=0.0011  A12=0.330 (medium)
+     General                vs Fair                   p=0.0000  A12=0.804 (large)
+     General                vs persona                p=0.0011  A12=0.330 (medium)
+     General                vs descriptive            p=0.0425  A12=0.625 (small)
+     General                vs negative_gender        p=0.0011  A12=0.330 (medium)
+     General                vs negative_ethnicity     p=0.0011  A12=0.330 (medium)
+     SE                     vs Fair                   p=0.0000  A12=0.973 (large)
+     SE                     vs descriptive            p=0.0000  A12=0.821 (large)
+     Fair                   vs persona                p=0.0000  A12=0.027 (large)
+     Fair                   vs descriptive            p=0.0007  A12=0.267 (large)
+     Fair                   vs negative_gender        p=0.0000  A12=0.027 (large)
+     Fair                   vs negative_ethnicity     p=0.0000  A12=0.027 (large)
+     persona                vs descriptive            p=0.0000  A12=0.821 (large)
+     descriptive            vs negative_gender        p=0.0000  A12=0.179 (large)
+     descriptive            vs negative_ethnicity     p=0.0000  A12=0.179 (large)
+
+[Segmind] ethnicity_bias
+  Kruskal-Wallis: H=283.344, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     General                vs Fair                   p=0.0000  A12=0.977 (large)
+     SE                     vs Fair                   p=0.0000  A12=1.000 (large)
+     Fair                   vs persona                p=0.0000  A12=0.000 (large)
+     Fair                   vs descriptive            p=0.0000  A12=0.013 (large)
+     Fair                   vs negative_gender        p=0.0000  A12=0.000 (large)
+     Fair                   vs negative_ethnicity     p=0.0000  A12=0.001 (large)
+
+[SDXL] gender_bias
+  Kruskal-Wallis: H=221.163, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     General                vs SE                     p=0.0046  A12=0.321 (medium)
+     General                vs Fair                   p=0.0000  A12=0.810 (large)
+     General                vs persona                p=0.0000  A12=0.250 (large)
+     General                vs descriptive            p=0.0014  A12=0.321 (medium)
+     General                vs negative_gender        p=0.0000  A12=0.281 (large)
+     General                vs negative_ethnicity     p=0.0000  A12=0.258 (large)
+     SE                     vs Fair                   p=0.0000  A12=0.951 (large)
+     Fair                   vs persona                p=0.0000  A12=0.027 (large)
+     Fair                   vs descriptive            p=0.0000  A12=0.057 (large)
+     Fair                   vs negative_gender        p=0.0000  A12=0.038 (large)
+     Fair                   vs negative_ethnicity     p=0.0000  A12=0.030 (large)
+
+[SDXL] ethnicity_bias
+  Kruskal-Wallis: H=209.901, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     General                vs SE                     p=0.0003  A12=0.260 (large)
+     General                vs persona                p=0.0000  A12=0.228 (large)
+     General                vs descriptive            p=0.0000  A12=0.950 (large)
+     SE                     vs descriptive            p=0.0000  A12=1.000 (large)
+     SE                     vs negative_gender        p=0.0203  A12=0.709 (medium)
+     SE                     vs negative_ethnicity     p=0.0000  A12=0.774 (large)
+     Fair                   vs descriptive            p=0.0000  A12=0.969 (large)
+     Fair                   vs negative_ethnicity     p=0.0142  A12=0.691 (medium)
+     persona                vs descriptive            p=0.0000  A12=1.000 (large)
+     persona                vs negative_gender        p=0.0017  A12=0.743 (large)
+     persona                vs negative_ethnicity     p=0.0000  A12=0.800 (large)
+     descriptive            vs negative_gender        p=0.0000  A12=0.003 (large)
+     descriptive            vs negative_ethnicity     p=0.0000  A12=0.061 (large)
+
+[Flux] gender_bias
+  Kruskal-Wallis: H=268.478, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     General                vs SE                     p=0.0000  A12=0.107 (large)
+     General                vs Fair                   p=0.0012  A12=0.794 (large)
+     General                vs persona                p=0.0000  A12=0.109 (large)
+     General                vs descriptive            p=0.0000  A12=0.186 (large)
+     General                vs negative_ethnicity     p=0.0000  A12=0.113 (large)
+     SE                     vs Fair                   p=0.0000  A12=0.997 (large)
+     SE                     vs negative_gender        p=0.0000  A12=0.898 (large)
+     Fair                   vs persona                p=0.0000  A12=0.002 (large)
+     Fair                   vs descriptive            p=0.0000  A12=0.035 (large)
+     Fair                   vs negative_gender        p=0.0430  A12=0.282 (large)
+     Fair                   vs negative_ethnicity     p=0.0000  A12=0.005 (large)
+     persona                vs negative_gender        p=0.0000  A12=0.896 (large)
+     descriptive            vs negative_gender        p=0.0000  A12=0.844 (large)
+     negative_gender        vs negative_ethnicity     p=0.0000  A12=0.106 (large)
+
+[Flux] ethnicity_bias
+  Kruskal-Wallis: H=163.478, p=0.0000 -> **SIGNIFICATIVO**
+  Coppie significative (Dunn-Bonferroni, p<0.05):
+     General                vs SE                     p=0.0002  A12=0.231 (large)
+     General                vs Fair                   p=0.0001  A12=0.778 (large)
+     General                vs negative_ethnicity     p=0.0001  A12=0.212 (large)
+     SE                     vs Fair                   p=0.0000  A12=0.932 (large)
+     SE                     vs persona                p=0.0000  A12=0.859 (large)
+     SE                     vs descriptive            p=0.0000  A12=0.888 (large)
+     SE                     vs negative_gender        p=0.0000  A12=0.901 (large)
+     Fair                   vs persona                p=0.0191  A12=0.271 (large)
+     Fair                   vs negative_ethnicity     p=0.0000  A12=0.056 (large)
+     persona                vs negative_ethnicity     p=0.0000  A12=0.127 (large)
+     descriptive            vs negative_ethnicity     p=0.0000  A12=0.103 (large)
+     negative_gender        vs negative_ethnicity     p=0.0000  A12=0.088 (large)
+
+====================================================================================================
+LEGENDA
+====================================================================================================
+  H        = statistica Kruskal-Wallis (chi-quadro)
+  p        = p-value (significativo se < 0.05)
+  A12      = Vargha-Delaney effect size (0.5 = no diff, >0.71/<0.29 = grande diff)
+  Magnit.  = negligible (<0.06), small (<0.14), medium (<0.21), large (>=0.21)
