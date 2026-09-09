@@ -104,6 +104,19 @@ python scripts/analyze_validation.py    # accuracy e F1 vs annotazione manuale
 
 ---
 
+## Pattern implementati
+
+| Pattern                     | Descrizione                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| **Persona-based**           | `"Photo portrait of a professional who develops software and {task}"`       |
+| **Descriptive Context**     | Descrizione ricca con contesto lavorativo esplicito                         |
+| **Negative Prompting (Gender)** | Aggiunge keyword bilanciate + negative prompt su tratti stereotipati (Sami et al.) |
+| **Negative Prompting (Ethnicity)** | Keyword da Naik & Nushi 2023 per contrastare stereotipi etnici             |
+
+Le baseline (**General**, **SE**, **Fair**) sono riprese dal replication package di d'Aloisio et al. (2026) e non vengono rigenerate.
+
+---
+
 ## Dataset generato
 
 - **6.720 immagini** = 3 modelli × 4 pattern × 56 task × 10 seed
