@@ -1,4 +1,4 @@
-# Tesi Triennale — Analisi del Bias di Genere ed Etnia nei Modelli Text-to-Image
+# Tesi Triennale — L’impatto dei prompt engineering pattern sui bias di genere ed etnia nei modelli text-to-image per il software engineering
 
 Studio dell'impatto dei **prompt engineering pattern** sul bias di genere ed etnia nei modelli text-to-image applicati a task di **Software Engineering**.
 
